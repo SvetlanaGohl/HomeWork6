@@ -46,23 +46,27 @@ public class Main {
     public static void task5 () {
 
         System.out.println("ЗАДАЧА 5");
-        for ( int i = 1904; i <= 2096; i = i + 4) {
-            System.out.println( i + " год является високосным.");
+        for ( int year = 1904; year <= 2096; year++) {
+            if (year % 4 == 0 && year % 100 != 00 || year % 400 == 0) {
+                System.out.println(year + " год является високосным.");
+            }
         }
     }
     public static void task6 () {
 
         System.out.println("ЗАДАЧА 6");
         for ( int i = 7; i <= 98; i = i + 7) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
+        System.out.println();
     }
     public static void task7 () {
 
         System.out.println("ЗАДАЧА 7");
         for ( int i = 1; i <= 512; i = i * 2) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
+        System.out.println();
     }
     public static void task8 () {
 
@@ -89,7 +93,7 @@ public class Main {
 
         System.out.println("ЗАДАЧА 10");
         int number = 2;
-        for ( int i = 1; i <= 10; i = i + 1) {
+        for ( int i = 1; i <= 10; i++) {
            System.out.println("2 * " + i + " = " + number*i);
         }
     }
